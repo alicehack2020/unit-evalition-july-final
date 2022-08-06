@@ -22,9 +22,28 @@ const loadData=()=>{
  
 
 const moreDetails=(id)=>
-{
-    
+{ 
    navigate("/ProductDetails/"+id);
+}
+
+const addToCart=(cartData)=>{
+ 
+fetch('http://localhost:8080/cart', {
+  method: 'POST',  
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(cartData),
+})
+.then((response) => response.json())
+.then((data) => {
+  console.log('Success:', data);
+  alert("added sucessfully")
+})
+.catch((error) => {
+  console.error('Error:', error);
+});
+
 }
 
 
@@ -42,6 +61,7 @@ const moreDetails=(id)=>
             <p>{res.price}</p>
             <img src={res.image} alt="" /> 
              <button onClick={()=>moreDetails(res.id)}>more Details</button>
+             <button onClick={()=>addToCart(res)}>Add to Cart</button>
           </div>
           </>)
         })

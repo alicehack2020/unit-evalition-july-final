@@ -337,6 +337,22 @@
       "image": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2019/12/15/777efffd-ccf5-42c9-b20f-5630d360b57f1576371164101-1.jpg",
       "price": 1299,
       "category": "homedecor"
+    },
+    {
+      "id": 1,
+      "brand": "Roadster",
+      "title": "cotton Checked Casual Shirt",
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2016/9/15/11473928353466-Roadster-Men-Black-Regular-Fit-Checked-Casual-Shirt-4501473928353310-1.jpg",
+      "category": "men",
+      "price": 844
+    },
+    {
+      "id": 2,
+      "brand": "Blackberry's",
+      "title": "Regukar Fit Printed Shirt",
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/10944602/2020/3/5/da4c1a83-987b-4afa-baad-f72039dbdedb1583385686526-Roadster-Men-Teal-Blue--Black-Regular-Fit-Printed-Casual-Shi-4.jpg",
+      "category": "men",
+      "price": 699
     }
   ]
 }
