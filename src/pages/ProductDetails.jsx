@@ -3,13 +3,13 @@ import { useParams } from 'react-router-dom';
 import "./ProductDetails.modules.css"
 const ProductDetails = () => {
   const [data,setData]=useState("")
-  let { pid } = useParams();
+  let { productid } = useParams();
   useEffect(()=>{
     loadData()
   },[])
 
   const loadData=()=>{
-    fetch('http://localhost:8080/products/'+pid)
+    fetch('http://localhost:8080/products/'+productid)
     .then(response => response.json())
     .then(data => setData(data)); 
   }

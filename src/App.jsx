@@ -14,7 +14,7 @@ function App() {
          <Route path="/login" element={<Login />}></Route>
         <Route path="/" element={<ProtectedRoutes Components={Home} />}></Route>
         <Route path="/cart" element={<ProtectedRoutes Components={Cart} />}></Route>
-        <Route path="/ProductDetails/:pid" element={<ProtectedRoutes Components={ProductDetails} />}></Route>
+        <Route path="/ProductDetails/:productid" element={<ProtectedRoutes Components={ProductDetails} />}></Route>
        </Routes>
     </>
     
