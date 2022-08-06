@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
  import "./Home.modules.css"
  import { useNavigate} from "react-router-dom";
-
+import "./Cart.modules.css"
  const Cart = () => {
  const [data,setData]=useState([])
  let navigate = useNavigate();
@@ -34,15 +34,17 @@ const loadData=()=>{
           data.map((ele)=>{
             return(<>
               <tr>
+              <td><img src={ele.image} alt="" /><br />
+              <td><button className='addTocart'>increase</button></td>
+                <td><button>1</button></td>
+                <td><button className='addTocart'>decrease</button></td>
+                <td><button className='addTocart'>remove</button></td>
+              </td>
                 <td>{ele.brand}</td>
                 <td>{ele.category}</td>
-                <td><img src={ele.image} alt="" /></td>
                 <td>{ele.price}</td>
                 <td>{ele.title}</td>
-                <td><button>increase</button></td>
-                <td><button>1</button></td>
-                <td><button>decrease</button></td>
-                <td><button>remove</button></td>
+                
               </tr>
             </>)
           })  

@@ -1,0 +1,12 @@
+.nav{
+    padding: 10px;
+    margin: 20px;
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+    font-size: larger;
+
+}
+.navBar{
+    padding: 10px;
+    background-color: cadetblue;
+}

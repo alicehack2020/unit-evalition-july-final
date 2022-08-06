@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import axios from 'axios'
  import "./Home.modules.css"
  import { useNavigate} from "react-router-dom";
 
@@ -57,11 +56,11 @@ fetch('http://localhost:8080/cart', {
           <div className='card'>
             <p>{res.brand}</p> 
             <p>{res.title}</p> 
-            <p>{res.category}</p> 
-            <p>{res.price}</p>
             <img src={res.image} alt="" /> 
-             <button onClick={()=>moreDetails(res.id)}>more Details</button>
-             <button onClick={()=>addToCart(res)}>Add to Cart</button>
+            <p>for {res.category} only</p> 
+            <p>Price:${res.price}</p>
+             <button className='moreDetails' onClick={()=>moreDetails(res.id)}>more Details</button>
+             <button  className='addTocart' onClick={()=>addToCart(res)}>Add to Cart</button>
           </div>
           </>)
         })
