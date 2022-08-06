@@ -24,7 +24,7 @@ const haddnleLogin=()=>{
   }
 
   return (
-    <div className=''>
+    <div className='logindiv'>
       <input type="text" name="" id="" value={email} placeholder='enter Email Address' onChange={(e)=>setEmail(e.target.value)}/>
       <br />
       <input type="text" name="" id="" value={password} placeholder='enter Email Password' onChange={(e)=>setPassword(e.target.value)}/>
