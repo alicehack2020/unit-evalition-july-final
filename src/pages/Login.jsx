@@ -2,11 +2,12 @@ import axios from 'axios'
 import React, { useContext, useState } from 'react'
 import { Navigate } from "react-router-dom";
 import "./Login.modules.css"
+import { useNavigate} from "react-router-dom";
 import {AuthContext} from "../context/AuthContext"
 const Login = () => {
   const [email,setEmail]=useState("")
   const [password,setPassword]=useState("")
-  
+  let navigate = useNavigate();
 const {auth,userLogin}=useContext(AuthContext)
  
 const haddnleLogin=()=>{
@@ -18,7 +19,7 @@ const haddnleLogin=()=>{
 
 
   const loginMessage=()=>{
-    alert("Login Sucessfuly") 
+    navigate("/");
     userLogin()
   }
 

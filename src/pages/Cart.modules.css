@@ -4,3 +4,9 @@
     border-radius: 10px;
     border: none;  
 }
+table, th, td {
+  border: 1px solid rgb(233, 112, 112);
+}
+table{
+    text-align: center;
+}
