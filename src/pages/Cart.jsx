@@ -39,6 +39,10 @@ const loadData=()=>{
                 <td><img src={ele.image} alt="" /></td>
                 <td>{ele.price}</td>
                 <td>{ele.title}</td>
+                <td><button>increase</button></td>
+                <td><button>1</button></td>
+                <td><button>decrease</button></td>
+                <td><button>remove</button></td>
               </tr>
             </>)
           })  
