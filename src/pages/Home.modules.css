@@ -1,0 +1,9 @@
+.card{
+    border: 1px solid black;
+    width: 200px;
+}
+
+.main_div{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
